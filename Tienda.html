@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Servicios</title>
+	<link rel="shortcut icon" href="Imagenes/icono.ico">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<a href="index.html"                   class="img-shake">  Inicio                    </a>
+				<a href="Sobre nosotros.html"              class="img-shake">  Sobre Nosotros            </a>
+				<a href="Contacto.html"                    class="img-shake">  Contacto                  </a>
+				<a href="Terminos y condiciones.html"      class="img-shake">  Terminos y Condiciones    </a>
+			</nav>
+		</div>
+	</header>
+
+    <script>
+		// Agregar comportamiento de desplazamiento suave a los enlaces de navegación
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});		
+			});
+		});
+	</script>
+
+	<section class="image-oops">
+      <img src="Imagenes/oops.png">
+	</section>
+
+	
+	
+	<div class="leyenda">Estamos trabajando en nuevo contenido próximamente. Vuelve pronto.</div>
+
+	
+
+
+	<footer>
+		<div class="geduguFinal">
+			<p>2023 © Gedugu</p>
+		</div>
+	</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+

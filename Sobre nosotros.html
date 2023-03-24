@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Sobre Nosotros</title>
+	<link rel="shortcut icon" href="Imagenes/icono.ico">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<a href="index.html"                   class="img-shake">  Inicio                    </a>
+				<a href="Tienda.html"                      class="img-shake">  Servicios                 </a>
+				<a href="Contacto.html"                    class="img-shake">  Contacto                  </a>
+				<a href="Terminos y condiciones.html"      class="img-shake">  Terminos y Condiciones    </a>
+			</nav>
+		</div>
+	</header>
+
+    <script>
+		// Agregar comportamiento de desplazamiento suave a los enlaces de navegación
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});		
+			});
+		});
+	</script>
+
+	<section class="detras-contenido">
+        <div class="container">
+            
+			<strong>DETRÁS DEL CONTENIDO</strong>	
+    </div>
+	</section>
+
+	<section class="organized-by">
+		<div class="container">
+			<p>Organizado con cuidado por Gerardo Eduwiges</p>
+		</div>
+	</section>
+
+	
+	<main>
+		<div class="image-container">
+			<a href="https://www.youtube.com/channel/UCEr5egaV7G9AHfbF3JuJNnA" target="_blank" rel="noopener">
+				<img src="Imagenes/Gedugu Music.png" alt="Gedugu Music" class="img-transparent img-shake">
+			 </a>
+			
+			 <a href="https://www.instagram.com/gedugu/?hl=es-la" target="_blank" rel="noopener"> 
+			<img src="Imagenes/Logo.png" alt="Logo" class="img-transparent img-shake">
+			 </a>
+
+			 <a href="https://play.google.com/store/apps/details?id=com.cute.cutemath" target="_blank" rel="noopener"> 	
+			<img src="Imagenes/logowhite.png" alt="logowhite" class="img-transparent img-shake">
+			 </a>
+		  </div>
+	</main>
+
+
+
+	<footer>
+		<div class="geduguFinal">
+			<p>2023 © Gedugu</p>
+		</div>
+	</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+

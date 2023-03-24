@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	
+	<meta charset="UTF-8">
+	<title>Gedugu</title>
+	<link rel="shortcut icon" href="Imagenes/icono.ico">
+	<link rel="stylesheet" href="estilos.css">
+	
+	</head>
+<body>
+
+
+	<header>
+		<div class="container">
+			<nav>
+				<a href="Tienda.html"                      class="img-shake">  Servicios               </a>
+				<a href="Sobre nosotros.html"              class="img-shake">  Sobre Nosotros          </a>
+				<a href="Contacto.html"                    class="img-shake">  Contacto                </a>
+				<a href="Terminos y condiciones.html"      class="img-shake">  Terminos y Condiciones  </a>
+			</nav>
+		</div>
+	</header>
+
+
+
+	<script>
+		// Agregar comportamiento de desplazamiento suave a los enlaces de navegación
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});		
+			});
+		});
+	</script>
+
+
+
+
+<section>
+	<div class="container">
+		<h1 style="font-size: 65px" class="gedugu" >GEDUGU</h1>
+		<br>
+		<p>La historia de Gedugu comenzó en el año 2008, cuando su creador se adentró en el mundo de la tecnología por primera vez. </p>
+		<p>Siempre había sentido una gran curiosidad por esta área, y finalmente decidió sumergirse en ella y aprender todo lo que pudiera.</p>
+		<br>
+		<p>Con el tiempo, Gedugu se convirtió en un apodo y se transformó. Gedugu ahora cuenta con una variedad de proyectos en línea, incluyendo un canal de YouTube llamado "Gedugu Music", una página de Instagram llamada "Gedugu Writings", y una aplicación en la Play Store llamada "Cute Math".</p>
+		<br>
+		<p>En "Gedugu Music", se pueden encontrar muchas canciones de genero alternativo,
+		   "Gedugu Writings" es un lugar para compartir pensamientos, reflexiones y poesía.
+		</p>
+		<br>
+		<p>Por último, "Gedugu Entertainment" ofrece juegos y otras formas de entretenimiento para dispositivos móviles y aunque por el momento solo cuenta con una aplicación en un futuro se prevén nuevas aplicaciones.</p>
+		<br>
+		<p>El objetivo de Gedugu siempre ha sido crear contenido que sea atractivo, interesante y entretenido para su audiencia, y seguirá trabajando duro para hacerlo en el futuro.</p>
+	</div>
+</section>
+
+  
+
+	<main>
+		<div class="image-container">
+			<a href="https://www.youtube.com/channel/UCEr5egaV7G9AHfbF3JuJNnA" target="_blank" rel="noopener">
+				<img src="Imagenes/Gedugu Music.png" alt="Gedugu Music" class="img-transparent img-shake">
+			 </a>
+			
+			 <a href="https://www.instagram.com/gedugu/?hl=es-la" target="_blank" rel="noopener"> 
+			<img src="Imagenes/Logo.png" alt="Logo" class="img-transparent img-shake">
+			 </a>
+
+			 <a href="https://play.google.com/store/apps/details?id=com.cute.cutemath" target="_blank" rel="noopener"> 	
+			<img src="Imagenes/logowhite.png" alt="logowhite" class="img-transparent img-shake">
+			 </a>
+		  </div>
+	</main>
+
+
+
+	<footer>
+		<div class="container">
+			<p>2023 © Gedugu</p>
+		</div>
+	</footer>
+
+
+	<script src="script.js"></script>
+
+
+</body>
+</html>
